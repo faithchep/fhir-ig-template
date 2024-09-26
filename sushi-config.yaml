@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir
-url: http://example.com/fhir/ImplementationGuide/my-ig
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
+id: kenya-training-jepkoech
+canonical: http://jembi.org/fhir
+url: http://jembi.org/fhir/ImplementationGuide/kenya-training-jepkoech
+name: KenyaTrainingIG
+title: "HL7 FHIR Implementation Guide: Kenya Training IG Release 1 - US Realm | STU1"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: draft
 license: CC0-1.0
@@ -19,9 +19,9 @@ date: 2020-02-26
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
-# it can be a single item OR and array here, but the current tooling 
+# it can be a single item OR and array here, but the current tooling
 # only supports one FHIR version per Implementation Guide
-fhirVersion: 5.0.0
+fhirVersion: 4.0.1
 
 # The following two lines correspond to items that used to be in
 # ig.ini but were moved to IG.definition.parameter. For
@@ -37,7 +37,7 @@ releaseLabel: DSTU
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
+  name: My Organization
   url: http://example.com/committees
   email: my-group@example.com
 
@@ -59,6 +59,11 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
+dependencies:
+  hl7.fhir.uv.ips:
+    id: InternationalPatientSummaryIG
+    uri: http://hl7.org/fhir/uv/ips/InternationalPatientSummaryIG/hl7.fhir.uv.ips
+    version: 1.1.0
 #dependencies:
 #  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
