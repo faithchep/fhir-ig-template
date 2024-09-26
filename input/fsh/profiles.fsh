@@ -2,7 +2,7 @@ Profile: KenyaPatient
 Parent : PatientUvIps
 Id: kenya-patient
 Title: "Kenya Patient"
-Description: "This is a example for creating fhir ig profile for Kenya Patient"
+Description: "This is a example for creating fhir ig profile for Training Kenya Patient"
 * maritalStatus 1..1
 * gender 1..1
 * telecom 0..* MS
